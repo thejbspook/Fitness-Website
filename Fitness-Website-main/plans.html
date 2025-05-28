@@ -2,58 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Plans | Your Fitness Brand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fitness Plans - Offers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header>Fitness Plans by [Your Name], CSCS & ATC</header>
+  
   <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="plans.html">Plans</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
-
-  </header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="plans.html" class="active">Plans</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  
   <main>
-    <h1>Our Training Plans</h1>
-    <div class="plans-container">
-      <div class="plan-card">
-        <h2>Hypertrophy</h2>
-        <p>Grow lean muscle mass with volume-based training.</p>
-        <button>Learn More</button>
-      </div>
-      <div class="plan-card">
-        <h2>Strength</h2>
-        <p>Maximize force output through progressive overload.</p>
-        <button>Learn More</button>
-      </div>
-      <div class="plan-card">
-        <h2>Injury Resilience</h2>
-        <p>Bulletproof your joints with prehab and mobility.</p>
-        <button>Learn More</button>
-      </div>
-      <div class="plan-card">
-        <h2>Return to Play</h2>
-        <p>Advanced bridge programs for athletes post-rehab.</p>
-        <button>Learn More</button>
-      </div>
-      <div class="plan-card">
-        <h2>Busy Professionals</h2>
-        <p>30-45 min effective sessions for tight schedules.</p>
-        <button>Learn More</button>
-      </div>
-      <div class="plan-card">
-        <h2>Young Athletes</h2>
-        <p>Develop athleticism with age-appropriate training.</p>
-        <button>Learn More</button>
+    <h1>Choose Your Workout Plan</h1>
+
+    <div class="plan">
+      <h3>Hypertrophy Plan - $49</h3>
+      <button onclick="toggleDetails('hypertrophy-details')">Learn More</button>
+      <div id="hypertrophy-details" class="details">
+        <p>This plan focuses on muscle growth with progressive overload and volume training over 12 weeks. Perfect for those aiming to gain lean muscle mass effectively.</p>
       </div>
     </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Your Fitness Brand. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+
+    <div class="plan">
+      <h3>Strength Development Plan - $59</h3>
+      <button onclick="toggleDetails('strength-details')">Learn More</button>
+      <div id="strength-details" class="details">
+        <p>Focus on compound lifts, periodization, and power development over 10 weeks. Ideal for athletes and serious lifters wanting to boost strength and performance.</p>
+      </div>
+    </div>
+
+    <div class="plan">
+      <h3>Injury Resilience & Rehab Plan - $69</h3>
+      <button onclick="toggleDetails('injury-details')">Learn More</button>
+      <div id="injury-details" class="details">
+        <p>Designed to help you prevent injuries and support recovery with mobility, stability, and strength exercises tailored for your needs.</p>
+      </div>
+    </div>
+
+    <div class="plan">
+      <h3>Busy Professional Plan - $39</h3>
+      <button onclick="toggleDetails('busy-details')">Learn More</button>
+      <div id="busy-details" class="details">
+        <p>Efficient workouts designed to fit tight schedules — short sessions that maximize results without sacrificing effectiveness.</p>
+      </div>
+    </div>
+
+    <div class="plan">
+      <h3>Young Athlete Development Plan - $45</h3>
+      <button onclick="toggleDetails('young-details')">Learn More</button>
+      <div id="young-details" class="details">
+        <p>Focus on foundational strength, movement skills, and injury prevention for teens and young athletes.</p>
+      </div>
+    </div>
+
+ 
